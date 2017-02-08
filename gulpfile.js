@@ -55,7 +55,7 @@ gulp.task('icon', function(){
 
 //export logo
 gulp.task('logo', function(){
-  return gulp.src('./images/sketch-data-populator.sketch')
+  return gulp.src('./images/cloudstitch-sketch-plugin.sketch')
     .pipe(sketch({
       export: 'artboards',
       formats: 'png'
@@ -192,19 +192,19 @@ gulp.task('default',function(callback) {
 
 gulp.task('zip', ['build'], function() {
   return gulp.src('./dist/*.sketchplugin/**/*')
-    .pipe(zip('SketchDataPopulator.zip'))
+    .pipe(zip('CloudstitchSketchPlugin.zip'))
     .pipe(gulp.dest('dist'))
 });
 
 gulp.task('release', ['zip'], function() {
-  return gulp.src('./dist/SketchDataPopulator.zip')
+  return gulp.src('./dist/CloudstitchSketchPlugin.zip')
     .pipe(release({
       //token: 'token',                     // or you can set an env var called GITHUB_TOKEN instead
-      owner: 'preciousforever',                    // if missing, it will be extracted from manifest (the repository.url field)
-      repo: 'sketch-data-populator',            // if missing, it will be extracted from manifest (the repository.url field)
+      owner: 'cloudstitch',                    // if missing, it will be extracted from manifest (the repository.url field)
+      repo: 'cloudstitch-sketch-plugin',            // if missing, it will be extracted from manifest (the repository.url field)
       //tag: 'v1.0.0',                      // if missing, the version will be extracted from manifest and prepended by a 'v'
       //name: 'publish-release v1.0.0',     // if missing, it will be the same as the tag
-      //notes: 'Fix for Sketch Version 42',                // if missing it will be left undefined
+      //notes: 'very good!',                // if missing it will be left undefined
       draft: false,                       // if missing it's false
       prerelease: false,                  // if missing it's false
       manifest: require('./build/manifest.json') // package.json from which default values will be extracted if they're missing
