@@ -8,24 +8,25 @@
 import * as commands from './commands'
 
 export const HKSketchFusionExtension = {
-  name: 'Sketch Data Populator',
-  bundleName: 'Sketch Data Populator',
-  description: 'Say goodbye to Lorem Ipsum: populate your Sketch documents with meaningful data.',
-  author: 'precious design studio',
-  authorEmail: 'info@precious-forever.com',
-  version: '2.1.2',
-  identifier: 'com.precious-forever.sketch.datapopulator2',
+  name: 'Cloudstitch',
+  bundleName: 'Cloudstitch',
+  description: 'Populate your Sketch designs with data from Google Spreadsheets and Microsoft Excel.',
+  author: 'Cloudstitch',
+  authorEmail: 'hello@cloudstitch.com',
+  version: '1.0.1',
+  identifier: 'com.cloudstitch.sketch-plugin',
   compatibleVersion: '3.7',
   menu: {
     'isRoot': false,
     'items': [
+      'populateWithCloudstitchSpreadsheet',
+      'createCloudstitchSpreadsheet',
+      '-',
       'populateWithPreset',
       'populateWithJSON',
-      'populateWithCloudstitchSpreadsheet',
       'populateTable',
       'populateAgain',
       'revealPresets',
-      'createCloudstitchSpreadsheet',
       'clearLayers'
     ]
   },
