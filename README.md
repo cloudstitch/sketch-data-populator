@@ -1,8 +1,10 @@
-<img src="images/sketch-data-populator.png" width="418" alt ="Sketch Data Populator">
+<img src="http://static.cloudstitch.com/img/assets/cloudstitch-sketch-plugin.png" style="margin-left: auto; margin-right: auto; display: block; max-height: 200px; max-width: 90%" alt ="Cloudstitch Framer Module">
 
-## Why Data Populator
+The <a href="https://github.com/cloudstitch/cloudstitch-sketch-plugin">Cloudstitch Sketch Plugin</a> is an open source extention of the  <a href="https://github.com/preciousforever/sketch-data-populator">Sketch Data Populator</a> that lets you also use Google Spreadsheet and Microsoft Excel data in your Sketch designs.
 
-We believe designers should work with _meaningful_ and _realistic_ data as early as possible in the design process for the following reasons:
+## Why this is Awesome
+
+Designers should work with _meaningful_ and _realistic_ data as early as possible in the design process for the following reasons:
 
 1. **Content informs design decisions** (and helps you convey your purpose)
 2. **Data are relentless** (so UI components must be designed for robustness)
@@ -10,10 +12,10 @@ We believe designers should work with _meaningful_ and _realistic_ data as early
 
 Read more about [designing with meaningful data](https://medium.com/sketch-app-sources/designing-with-meaningful-data-5456b40e172e#.1mft9hyv2).
 
-_Sketch Data Populator_ not only makes you more productive (probably around [60x faster](https://vimeo.com/131896485)), it changes the way you design user interfaces (at least that's what happened to us).
+The original _Sketch Data Populator_ not only makes you more productive (probably around [60x faster](https://vimeo.com/131896485)), it changes the way you design user interfaces (at least that's what happened to us). And this Cloudstitch extension makes you _even more_ productive by letting you manage your data in shared spreadsheets instead of cumbersome JSON files.
 
 ## How to install
-Download the latest version from the [releases page](https://github.com/preciousforever/sketch-data-populator/releases), unzip it and double-click the `Sketch Data Populator.sketchplugin` file to install it in Sketch.
+Download the latest version from the [releases page](https://github.com/cloudstitch/cloudstitch-sketch-plugin/releases), unzip it and double-click the `Cloudstitch.sketchplugin` file to install it in Sketch.
 
 <a href="http://bit.ly/SketchRunnerWebsite">
   <img width="160" height="40" src="http://sketchrunner.com/img/badge_blue.png" >
@@ -21,15 +23,15 @@ Download the latest version from the [releases page](https://github.com/precious
 
 ## Testing & Credits
 
-Please report bugs, observations, ideas & feature requests as [issues](https://github.com/preciousforever/sketch-data-populator/issues) or [get in touch](mailto:feedback@datapopulator.com).
+Please report bugs, observations, ideas & feature requests as [issues](https://github.com/cloudstitch/cloudstitch-sketch-plugin/issues) or [get in touch](mailto:hello@cloudstitch.com).
 
-We conceived _Sketch Data Populator_ to improve our design process for working with data at [precious design studio](http://precious-forever.com/) and developed the plugin in collaboration with [Lukas Ondrej](https://github.com/lukasondrej).
+This plugin is an extension of the <a href="https://github.com/preciousforever/sketch-data-populator">Sketch Data Populator</a> plugin. We've submitted our additions back as a pull request but decided to also release our own branded fork as space to experiment with tools for the design community. _Sketch Data Populator_ was created by [precious design studio](http://precious-forever.com/) in collaboration with [Lukas Ondrej](https://github.com/lukasondrej).
 
-Please get in touch if you have questions or comments via [@preciousforever](https://twitter.com/preciousforever) or [our website](http://precious-forever.com/contact).
+Please get in touch if you have questions or comments via [@cloudstitch](https://twitter.com/cloudstitch) or [our website](http://cloudstitch.com/contact).
 
 ## How to use
 
-The _Sketch Data Populator_ plugin creates a grid from a selected Layer, Layer Group or Artboard and replaces text and image {placeholders} with data from a JSON source:
+The _Cloudstitch Sketch Plugin_ plugin creates a grid from a selected Layer, Layer Group or Artboard and replaces text and image {placeholders} with data from a JSON source:
 
 ![Sketch Data Populator](images/sketch-data-populator.gif)
 
@@ -40,6 +42,22 @@ The _Sketch Data Populator_ plugin creates a grid from a selected Layer, Layer G
 2. In the same Layer Group, create a Shape Layer (this is your image placeholder). Give the Shape Layer a placeholder name in curly brackets – such as `{image}`. The plugin's "Populate with …" command will replace this placeholder with respective image data (PNG or JPG, local file or URL).
 
 ## Available Commands
+
+### Create Spreadsheet
+will take you to a page on <a href="cloudstitch.com">Cloudstitch.com</a> that will generate a cloud-hosted spreadsheet (Google or Microsoft) that you can access from inside Sketch. If you don't have an account, you'll be asked to create a free one.
+
+<img src="http://static.cloudstitch.com/movies/cloudstitch-sketch-create.gif" style="margin-left: auto; margin-right: auto; display: block; max-height: 200px; max-width: 90%" alt ="Cloudstitch Framer Module">
+
+### Populate with Spreadsheet
+will display a dialog that asks you for the *username* and *appname* of the Cloudstitch project you just created, as well as the *worksheet name* inside the spreadsheet that you'd like to load.
+
+You can find the username and appname for your project by looking at its URL:
+
+<img src="http://static.cloudstitch.com/img/assets/username-appname.png" style="margin-left: auto; margin-right: auto; display: block; max-height: 200px; max-width: 90%" alt ="Cloudstitch Framer Module">
+
+The worksheet name is the name of the tab that you see inside Google Sheets or Excel (for example, *Sheet1* or *People* or *Products*)
+
+<img src="http://static.cloudstitch.com/movies/cloudstitch-sketch-duplicate.gif" style="margin-left: auto; margin-right: auto; display: block; max-height: 200px; max-width: 90%" alt ="Cloudstitch Framer Module">
 
 ### Populate with Preset
 will display a dialog that allows you to select one of your Presets as well as configure Data and Layout options:
@@ -239,7 +257,7 @@ Check out the **demo.sketch** file to get an idea. The demo makes use of the _Go
 
 ## Plugin Development
 
-_Sketch Data Populator_ is based on _Sketch Fusion_ by [Andrey Shakhmin, @turbobabr](https://github.com/turbobabr), as presented at [#SketcHHackday 2016](http://designtoolshackday.com).
+_Cloudstitch Sketch Plugin_ is based on _Sketch Fusion_ by [Andrey Shakhmin, @turbobabr](https://github.com/turbobabr), as presented at [#SketcHHackday 2016](http://designtoolshackday.com).
 
 Development
 ```

@@ -105,7 +105,6 @@ export function createCloudstitchOptionsView(opt) {
   }
 
   //create options view
-
   const ViewWidth = 300, ViewHeight = 200;
   const X = 0, W = 300, LabelHeight = 23, InputHeight = 22;
   const X = 0, W = 300, LabelHeight = 20, InputHeight = 22;
